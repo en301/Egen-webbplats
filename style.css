@@ -1,0 +1,54 @@
+.warpper{
+    width:100%;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+color: whitesmoke;
+text-decoration: none;
+font-size: 175%;
+}
+
+nav{
+    text-decoration: underline;
+    grid-area: nav;
+    text-decoration: none;
+}
+
+nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    align-self: stretch;
+    align-items: stretch;
+}
+
+header{
+grid-area: header;
+background-color: blue;
+color: whitesmoke;
+}
+
+main{
+grid-area: main;
+}
+
+footer{
+grid-area: footer;
+background-color: lightgray;
+}
