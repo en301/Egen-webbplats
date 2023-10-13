@@ -1,16 +1,21 @@
+body{
+    background-color:beige
+}
+
 .warpper{
     width:100%;
     display:grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 80px auto 80px;
     grid-template-areas:
     "header"
-    "nav"
     "main"
     "footer";
 }
 
 h1{
-    text-align: center;
+    text-align: left;
+    margin-top: 70px;
+    font-size: 35px;
 }
 
 a{
@@ -21,13 +26,16 @@ font-size: 175%;
 
 nav{
     text-decoration: underline;
-    grid-area: nav;
+    /*grid-area: nav;*/
+    grid-column: 1/span 8;
     text-decoration: none;
+    background-color: #26448a;
 }
 
 nav > ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
 }
 
 nav li{
@@ -40,8 +48,9 @@ nav li{
 
 header{
 grid-area: header;
-background-color: blue;
-color: whitesmoke;
+display: grid;
+grid-template-rows: auto auto;
+grid-template-columns: 1fr 7fr;
 }
 
 main{
@@ -51,4 +60,9 @@ grid-area: main;
 footer{
 grid-area: footer;
 background-color: lightgray;
+font-size: 150%;
+}
+
+img{
+    width: 225px;
 }
