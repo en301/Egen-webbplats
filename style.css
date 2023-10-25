@@ -21,19 +21,19 @@ h1{
 }
 
 p{
-font-size: 125%
+    font-size: 125%
 }
 
 a{
-color: whitesmoke;
-text-decoration: none;
-font-size: 175%;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 175%;
 }
 
 .link{
-text-decoration: underline;
-color:blue;
-font-size: 125%;
+    text-decoration: underline;
+    color:blue;
+    font-size: 125%;
 }
 
 nav{
@@ -59,25 +59,91 @@ nav li{
 }
 
 header{
-grid-area: header;
-display: grid;
-grid-template-rows: auto auto;
-grid-template-columns: 1fr 7fr;
+    grid-area: header;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 7fr;
 }
 
 main{
-grid-area: main;
+    grid-area: main;
 }
 
 footer{
-grid-area: footer;
-background-color: lightgray;
-font-size: 150%;
+    grid-area: footer;
+    background-color: lightgray;
+    font-size: 150%;
 }
 
 img{
     width: 225px;
 }
+
 .pic1{
     width: 500px
+}
+
+#spalt main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+table{
+    width: 90%;
+}
+
+td{
+    font-size: 110%;
+    width:30%;
+}
+
+caption{
+    font-size: 150%;
+    text-align: center;
+}
+
+th{
+    background-color:#26448a;
+    color:whitesmoke;
+    font-size: 120%;
+}
+
+tr:nth-child(odd){
+    background-color:lightgray;
+    color:black
+}
+
+tr:nth-child(even){
+    background-color:white;
+    color:black
+}
+
+td:nth-child(1){
+    text-align:left;
+}
+
+td:nth-child(2){
+    text-align:center;
+}
+
+td:nth-child(3){
+    text-align:right;
+}
+
+th:nth-child(1){
+    text-align:left;
+}
+
+th:nth-child(2){
+    text-align:center;
+}
+
+th:nth-child(3){
+    text-align:right;
 }
