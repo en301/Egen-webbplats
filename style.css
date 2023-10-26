@@ -1,4 +1,4 @@
-body{
+body{ /*Detta är typen body jag gör stylar*/
     background-color:beige;
     height: 97vh;
     overflow-y: hidden;
@@ -39,7 +39,6 @@ a{
 
 nav{
     text-decoration: underline;
-    /*grid-area: nav;*/
     grid-column: 1/span 8;
     text-decoration: none;
     background-color: #26448a;
@@ -74,7 +73,7 @@ main{
 footer{
     grid-area: footer;
     background-color: lightgray;
-    font-size: 150%;
+    font-size: 125%;
 }
 
 img{
