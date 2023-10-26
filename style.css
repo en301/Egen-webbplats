@@ -1,6 +1,7 @@
 body{
     background-color:beige;
     height: 97vh;
+    overflow-y: hidden;
 }
 
 .wrapper{
@@ -67,6 +68,7 @@ header{
 
 main{
     grid-area: main;
+    overflow-y: scroll;
 }
 
 footer{
@@ -146,4 +148,20 @@ th:nth-child(2){
 
 th:nth-child(3){
     text-align:right;
+}
+
+.alttab td:nth-child(1){
+    text-align:center;
+}
+
+.alttab td:nth-child(2){
+    text-align:center;
+}
+
+.alttab :nth-child(1){
+    text-align:center;
+}
+
+.alttab th:nth-child(2){
+    text-align:center;
 }
