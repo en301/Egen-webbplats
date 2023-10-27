@@ -1,73 +1,72 @@
-body{ /*Detta är typen body jag gör stylar*/
-    background-color:beige;
-    height: 97vh;
-    overflow-y: hidden;
+body{ /*Här påbörjar jag en style på en viss typ i detta fall är det bodyn*/
+    background-color:beige; /*Här valde jag bakgrunds färg*/
+    height: 97vh; /*Denna gör att footern alltid är i botten av sidan*/
+    overflow-y: hidden; /*Tar bort skrollfunktionen från sidan*/
 }
 
-.wrapper{
-    width:100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 220px auto 65px;
-    grid-template-areas:
-    "header"
+.wrapper{ /*Här är min klass wrapper som beskriver hur sidan ska se ut*/
+    width:100%; /*Bredden på sidan*/
+    height: 100%; /*Höjden på sidan*/
+    display: grid; /*Skapar en grid*/
+    grid-template-rows: 220px auto 65px; /*Bestämmer storleken av griden*/
+    grid-template-areas: /*Ger namn till olika griddelar*/
+    "header" /*De olika namnen*/
     "main"
     "footer";
 }
 
-h1{
-    text-align: left;
-    margin-top: 70px;
-    font-size: 35px;
+h1{ /*Typen för översta rubriken*/
+    text-align: left; /*Gör att texten hamnar på vänster sida*/
+    margin-top: 70px; /*Gör att rubriken hamnar på rätt plats*/
+    font-size: 35px; /*Bestämmer storleken på texten*/
 }
 
-p{
+p{ /*Typen för brödtext*/
     font-size: 125%
 }
 
-a{
-    color: whitesmoke;
-    text-decoration: none;
+a{ /*Typen länkar*/
+    color: whitesmoke; /*Bestämmer färg på texten*/
+    text-decoration: none; /*Tar bort alla speciella saker med länken*/
     font-size: 175%;
 }
 
-.link{
-    text-decoration: underline;
+.link{ /*Klassen för länken som skulle vara blå och understruken*/
+    text-decoration: underline; /*Gör texten understruken*/
     color:blue;
     font-size: 125%;
 }
 
-nav{
+nav{ /*Typen för min navigator*/
     text-decoration: none;
-    grid-column: 1/span 8;
-    text-decoration: none;
+    grid-column: 1/span 8; /*Gör att naven sträcker sig över hela sidan*/
     background-color: #26448a;
 }
 
 nav > ul{
-    display: grid;
-    grid-template-columns: 3fr 1fr 3fr;
-    padding: 5px;
+    display: grid; /*Skapar en grid*/
+    grid-template-columns: 3fr 1fr 3fr; /*Fördelar griden*/
+    padding: 5px; /*Lägger till en 5px stor box runt så min navigator ser lite tjockare ut*/
 }
 
-nav li{
-    list-style-type: none;
-    text-align: center;
+nav li{ /*Här förändras både nav och li*/
+    list-style-type: none; /*Gör att inte listan har några speciella saker så som punker*/
+    text-align: center; /*Centrerar texten*/
     display: grid;
-    align-self: stretch;
-    align-items: stretch;
+    align-self: stretch; /*Gör att texten breder ut sig och inte går nedåt*/
+    align-items: stretch; /*Gör att texten breder ut sig och inte går nedåt*/
 }
 
-header{
-    grid-area: header;
+header{ /*Typen header*/
+    grid-area: header; /*Ger headern sitt grid namn*/
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 7fr;
+    grid-template-rows: auto auto; /*Skapar de två delarna för bilden och rubriken*/
+    grid-template-columns: 1fr 7fr; /*Skapar en grid så att bilden hamnar på rätt plats*/
 }
 
 main{
     grid-area: main;
-    overflow-y: scroll;
+    overflow-y: scroll; /*Skapar en skrollfunktion på din main*/
 }
 
 footer{
@@ -76,31 +75,31 @@ footer{
     font-size: 125%;
 }
 
-footer > p{
+footer > p{ /*Förändrar all brödtext i footern*/
     margin-top: 7px;
 }
 
-img{
-    width: 225px;
+img{ /*Förändrar alla bilder*/
+    width: 225px; /*Bestämmer storleken av bilden*/
 }
 
-.pic1{
+.pic1{ /*Förändrar bilderna med denna klass*/
     width: 500px
 }
 
-#spalt main{
+#spalt main{ /*Förändrar main som ligger i spalt id*/
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-table, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
+table, th, td{ /*Förändrar alla dessa tre typer*/
+    border: 1px solid black; /*Skapar en border runt tabellen*/
+    border-collapse: collapse; /*Gör att tabellbordern inte syns dubbellt*/
     
 }
 
 table{
-    width: 90%;
+    width: 90%; /*Gör att tabellen bara tar upp 90% av griddelen*/
 }
 
 td{
@@ -119,52 +118,52 @@ th{
     font-size: 120%;
 }
 
-tr:nth-child(odd){
+tr:nth-child(odd){ /*Denna gör att varannan tr som är udda förändras*/
     background-color:lightgray;
     color:black
 }
 
-tr:nth-child(even){
+tr:nth-child(even){ /*Denna gör att varannan tr som är jämn förändras*/
     background-color:white;
     color:black
 }
 
-td:nth-child(1){
+td:nth-child(1){ /*Gör att den första i varje rad på tabellen förändras*/
     text-align:left;
 }
 
-td:nth-child(2){
+td:nth-child(2){ /*Den andra cellen i varje rad*/
     text-align:center;
 }
 
-td:nth-child(3){
+td:nth-child(3){ /*Den tredje cellen för varje rad*/
     text-align:right;
 }
 
-th:nth-child(1){
+th:nth-child(1){ /*Förändrar den första tabellrubriken*/
     text-align:left;
 }
 
-th:nth-child(2){
+th:nth-child(2){ /*Förändrar den andra tabellrubriken*/
     text-align:center;
 }
 
 th:nth-child(3){
-    text-align:right;
+    text-align:right; /*Förändrar den tredje tabellrubriken*/
 }
 
-.alttab td:nth-child(1){
+.alttab td:nth-child(1){ /*Förändrar den första cellen i varje rad med en tabell med denna klass*/
     text-align:center;
 }
 
-.alttab td:nth-child(2){
+.alttab td:nth-child(2){ /*Förändrar den andra cellen i varje rad med en tabell med denna klass*/
     text-align:center;
 }
 
-.alttab :nth-child(1){
+.alttab :nth-child(1){ /*Förändrar den första rubriken i varje rad med en tabell med denna klass*/
     text-align:center;
 }
 
-.alttab th:nth-child(2){
+.alttab th:nth-child(2){ /*Förändrar den andra rubriken i varje rad med en tabell med denna klass*/
     text-align:center;
 }
