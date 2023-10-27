@@ -38,7 +38,7 @@ a{
 }
 
 nav{
-    text-decoration: underline;
+    text-decoration: none;
     grid-column: 1/span 8;
     text-decoration: none;
     background-color: #26448a;
