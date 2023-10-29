@@ -43,13 +43,13 @@ nav{ /*Typen för min navigator*/
     background-color: #26448a;
 }
 
-nav > ul{
+nav > ul{ /*ett arv till ul om ul ligger i nav*/
     display: grid; /*Skapar en grid*/
     grid-template-columns: 3fr 1fr 3fr; /*Fördelar griden*/
     padding: 5px; /*Lägger till en 5px stor box runt så min navigator ser lite tjockare ut*/
 }
 
-nav li{ /*Här förändras både nav och li*/
+nav li{ /*En gruppselektor på nav och li*/
     list-style-type: none; /*Gör att inte listan har några speciella saker så som punker*/
     text-align: center; /*Centrerar texten*/
     display: grid;
