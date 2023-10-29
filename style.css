@@ -49,7 +49,7 @@ nav > ul{ /*ett arv till ul om ul ligger i nav*/
     padding: 5px; /*Lägger till en 5px stor box runt så min navigator ser lite tjockare ut*/
 }
 
-nav li{ /*En gruppselektor på nav och li*/
+nav li{ /*En avkomlingsselektor*/
     list-style-type: none; /*Gör att inte listan har några speciella saker så som punker*/
     text-align: center; /*Centrerar texten*/
     display: grid;
